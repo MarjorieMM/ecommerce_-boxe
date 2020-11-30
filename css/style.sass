@@ -1,0 +1,145 @@
+@import ../node_modules/bootstrap/scss/mixins
+@import ../node_modules/bootstrap/scss/_functions
+@import ../node_modules/bootstrap/scss/_variables
+
+$orange: #ee9f06
+$grey: #4e4e4e
+$lightGrey: #f3f3f3
+$darkGrey: #292929
+
+@font-face
+    font-family: "liberation_sansbold"
+    src: url("../fonts/liberationsans-bold-webfont-webfont.woff2") format("woff2")
+    src: url("../fonts/liberationsans-bold-webfont-webfont.woff") format("woff")
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: "liberation_sansregular"
+    src: url("../fonts/liberationsans-regular-webfont-webfont.woff2") format("woff2")
+    src: url("../fonts/liberationsans-regular-webfont-webfont.woff") format("woff")
+    font-weight: normal
+    font-style: normal
+
+body
+    font-family: "liberation_sansregular", monospace
+
+header
+    .container-fluid
+        background: url(../images/background.jpg) top / cover repeat
+        height: 100%
+        nav
+            display: inline
+        a
+            color: black
+        li:first-child a
+            white-space: nowrap
+.logo
+    img
+        width: 30%
+    p
+        span
+            color: $orange
+
+.bonjour
+    p
+        white-space: nowrap
+        padding: 0
+
+.background-photo
+    height: 300px
+    background: url(../images/header-page-catalogue.png) top / cover no-repeat
+
+.background
+    background-color: $darkGrey
+
+.grey-background
+    background-color: $lightGrey
+
+.card
+    width: 75%
+    img
+        margin-bottom: -50px
+
+.card-text
+    font-size: small
+
+.btn
+    color: white
+    border-radius: 0
+    font-size: small
+    background-color: black
+    padding: 2px  20px 4px 20px
+
+.prix
+    align-self: center
+    span
+        color: $orange
+
+.big-card
+    .d-flex
+        width: 75%
+        a
+            white-space: nowrap
+            &:hover
+                color: $orange
+
+.floating
+    background-color: black
+    position: relative
+    top: 5px
+    left: 80%
+    width: 60px
+    border-radius: 5px
+
+    p
+        color: $orange
+        font-weight: bold
+        padding: 5px
+
+footer
+    background-color: $grey
+
+.icon
+    flex-direction: column
+    img
+        align-self: center
+    p
+        font-size: smaller
+
+.above-footer
+    background-color: white
+    border-radius: 10px
+    position: relative
+    top: -50%
+    margin: auto
+    a
+        color: black
+        white-space: nowrap
+        font-size: 70%
+   
+
+.copyright
+    font-size: 0.8rem
+    
+.big-card
+    .d-flex
+        a
+            font-size: 75%
+// @include media-breakpoint-up(sm)
+@include media-breakpoint-up(md)
+    .above-footer
+        width: 75%
+        li
+            &:after
+                content:'•'
+                color: #d2d2d2
+                font-size: 3em
+                vertical-align: middle
+            &:last-of-type:after
+                content: ''
+                vertical-align: middle
+            a
+                font-size: 100%
+// @include media-breakpoint-up(lg)
+// @include media-breakpoint-up(xl)

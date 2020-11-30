@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "liberation_sansbold";
+  src: url("../fonts/liberationsans-bold-webfont-webfont.woff2") format("woff2");
+  src: url("../fonts/liberationsans-bold-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "liberation_sansregular";
+  src: url("../fonts/liberationsans-regular-webfont-webfont.woff2") format("woff2");
+  src: url("../fonts/liberationsans-regular-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "liberation_sansregular", monospace;
+}
+
+header .container-fluid {
+  background: url(../images/background.jpg) top/cover repeat;
+  height: 100%;
+}
+header .container-fluid nav {
+  display: inline;
+}
+header .container-fluid a {
+  color: black;
+}
+header .container-fluid li:first-child a {
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 30%;
+}
+.logo p span {
+  color: #ee9f06;
+}
+
+.bonjour p {
+  white-space: nowrap;
+  padding: 0;
+}
+
+.background-photo {
+  height: 300px;
+  background: url(../images/header-page-catalogue.png) top/cover no-repeat;
+}
+
+.background {
+  background-color: #292929;
+}
+
+.grey-background {
+  background-color: #f3f3f3;
+}
+
+.card {
+  width: 75%;
+}
+.card img {
+  margin-bottom: -50px;
+}
+
+.card-text {
+  font-size: small;
+}
+
+.btn {
+  color: white;
+  border-radius: 0;
+  font-size: small;
+  background-color: black;
+  padding: 2px 20px 4px 20px;
+}
+
+.prix {
+  align-self: center;
+}
+.prix span {
+  color: #ee9f06;
+}
+
+.big-card .d-flex {
+  width: 75%;
+}
+.big-card .d-flex a {
+  white-space: nowrap;
+}
+.big-card .d-flex a:hover {
+  color: #ee9f06;
+}
+
+.floating {
+  background-color: black;
+  position: relative;
+  top: 5px;
+  left: 80%;
+  width: 60px;
+  border-radius: 5px;
+}
+.floating p {
+  color: #ee9f06;
+  font-weight: bold;
+  padding: 5px;
+}
+
+footer {
+  background-color: #4e4e4e;
+}
+
+.icon {
+  flex-direction: column;
+}
+.icon img {
+  align-self: center;
+}
+.icon p {
+  font-size: smaller;
+}
+
+.above-footer {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: -50%;
+  margin: auto;
+}
+.above-footer a {
+  color: black;
+  white-space: nowrap;
+  font-size: 70%;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.big-card .d-flex a {
+  font-size: 75%;
+}
+
+@media (min-width: 768px) {
+  .above-footer {
+    width: 75%;
+  }
+  .above-footer li:after {
+    content: "•";
+    color: #d2d2d2;
+    font-size: 3em;
+    vertical-align: middle;
+  }
+  .above-footer li:last-of-type:after {
+    content: "";
+    vertical-align: middle;
+  }
+  .above-footer li a {
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
